@@ -24,21 +24,30 @@ string replace(string word)
 {
 	for(int i = 0, length = strlen(word); i < length; i++)
 	{
-		if(word[i] == 'a' || word[i] == 'A')
+		switch (word[i])
 		{
-			word[i] = '6';
-		}
-		else if(word[i] == 'e' || word[i] == 'E')
-		{
-			word[i] = '3';
-		}
-		else if(word[i] == 'i' || word[i] == 'I')
-		{
-			word[i] = '1';
-		}
-		else if(word[i] == 'o' || word[i] == 'O')
-		{
-			word[i] = '0';
+			case 'a':
+			case 'A':
+				word[i] = '6';
+				break;
+			
+			case 'e':
+			case 'E':
+				word[i] = '3';
+				break;
+			
+			case 'i':
+			case 'I':
+				word[i] = '1';
+				break;
+			
+			case 'o':
+			case 'O':
+				word[i] = '0';
+				break;
+
+			default:
+				break;
 		}
 	}
 
