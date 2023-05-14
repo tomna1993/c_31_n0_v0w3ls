@@ -15,15 +15,17 @@ int main(int argc, string argv[])
 		return 1;
 	}
 
-	//Call replace function and print the result
+	// Call replace function and print the result
 	printf("%s\n", replace(argv[1]));
 	return 0;
 }
 
 string replace(string word)
 {
+	// Iterate through the word string array
 	for(int i = 0, length = strlen(word); i < length; i++)
 	{
+		// Use switch to detect and chanve the given letters to numbers
 		switch (word[i])
 		{
 			case 'a':
@@ -46,10 +48,12 @@ string replace(string word)
 				word[i] = '0';
 				break;
 
+			// If the letter is other than the cases above, the program goes to the next letter
 			default:
 				break;
 		}
 	}
 
+	// Return the string with the modified letters
 	return word;
 }
