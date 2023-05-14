@@ -24,19 +24,19 @@ string replace(string word)
 {
 	for(int i = 0, length = strlen(word); i < length; i++)
 	{
-		if(word[i] == 'a')
+		if(word[i] == 'a' || word[i] == 'A')
 		{
 			word[i] = '6';
 		}
-		else if(word[i] == 'e')
+		else if(word[i] == 'e' || word[i] == 'E')
 		{
 			word[i] = '3';
 		}
-		else if(word[i] == 'i')
+		else if(word[i] == 'i' || word[i] == 'I')
 		{
 			word[i] = '1';
 		}
-		else if(word[i] == 'o')
+		else if(word[i] == 'o' || word[i] == 'O')
 		{
 			word[i] = '0';
 		}
